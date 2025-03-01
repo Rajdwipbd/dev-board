@@ -13,6 +13,14 @@
             -webkit-line-clamp: 2;
             -webkit-box-orient: vertical;
         }
+
+        .activity_logStyle {
+            text-align: center;
+            background-color: #F4F7FF;
+            margin: 20px 30px;
+            padding: 20px;
+
+        }
     </style>
 </head>
 
@@ -25,7 +33,7 @@
             </div>
             <div class="flex gap-2">
                 <div class="btn rounded-xl"><img src="assets/checkbox.png" alt="">
-                    <span>23</span>
+                    <span id="nav-counter">23</span>
                 </div>
                 <div>
                     <img class="btn rounded-full p-2" src="assets/theme-btn.png" alt="">
@@ -46,7 +54,7 @@
                         </div>
                         <div>
                             <p>Task Assigned</p>
-                            <p class="font-bold">06
+                            <p id="taskAssinedText" class="font-bold">06
                             <p>
                         </div>
 
@@ -69,11 +77,12 @@
 
                 <!-- main bottom section  -->
                 <section class="grid grid-cols-3 gap-4 mx-3">
-                    <section class="bg-[#F4F7FF] p-4 space-y-4 rounded-md">
+                    <section class="bg-[#F4F7FF] p-4 space-y-4 rounded-md task">
                         <div class="flex flex-col gap-y-3">
                             <span class="bg-white px-4 py-2 w-2/4 rounded-md">ShopEase</span>
-                            <p class="font-bold text-xl">Fix Mobile Button Issue </p>
-                            <p class="bg-white multi-line-ellipsis overflow-hidden px-4 opacity-80 ">Debug using Chrome
+                            <p class="font-bold text-xl exact">Fix Mobile Button Issue </p>
+                            <p class="bg-white multi-line-ellipsis overflow-hidden px-4 opacity-80 ">Debug using
+                                Chrome
                                 DevTools,
                                 check
                                 for overlapping
@@ -89,22 +98,17 @@
                                 <p class="font-bold">21 March 2025</p>
                             </div>
                             <div>
-                                <button class="btn btn-active btn-primary">Completed</button>
+                                <button id="completeBtn1" class="btn  btn-primary">Completed</button>
                             </div>
                         </div>
                     </section>
-                    <section class="bg-[#F4F7FF] p-4 space-y-4 rounded-md">
+                    <section class="bg-[#F4F7FF] p-4 space-y-4 rounded-md task">
                         <div class="flex flex-col gap-y-3">
-                            <span class="bg-white px-4 py-2 w-2/4 rounded-md">ShopEase</span>
-                            <p class="font-bold text-xl">Fix Mobile Button Issue </p>
-                            <p class="bg-white multi-line-ellipsis overflow-hidden px-4 opacity-80">Debug using Chrome
-                                DevTools,
-                                check
-                                for overlapping
-                                elements, and ensure
-                                onClick works
-                                properly
-                                and ensure onClick works properly</p>
+                            <span class="bg-white px-4 py-2 w-2/4 rounded-md">CloudSync</span>
+                            <p class="font-bold text-xl exact">Add Dark Mode</p>
+                            <p class="bg-white multi-line-ellipsis overflow-hidden px-4 opacity-80 ">Store the user's
+                                preference in localStorage, update CSS variables dynamically, and apply a smooth
+                                transition effect.</p>
                         </div>
                         <hr class="border-t-2 border-dotted border-gray-300 my-4">
                         <div class="flex justify-between">
@@ -113,21 +117,16 @@
                                 <p class="font-bold">21 March 2025</p>
                             </div>
                             <div>
-                                <button class="btn btn-active btn-primary">Completed</button>
+                                <button id="completeBtn2" class="btn  btn-primary">Completed</button>
                             </div>
                         </div>
                     </section>
-                    <section class="bg-[#F4F7FF] p-4 space-y-4 rounded-md">
+                    <section class="bg-[#F4F7FF] p-4 space-y-4 rounded-md task">
                         <div class="flex flex-col gap-y-3">
-                            <span class="bg-white px-4 py-2 w-2/4 rounded-md">ShopEase</span>
-                            <p class="font-bold text-xl">Fix Mobile Button Issue </p>
+                            <span class="bg-white px-4 py-2 w-2/4 rounded-md">SwiftPay</span>
+                            <p class="font-bold text-xl exact">Optimize Home page</p>
                             <p class="bg-white multi-line-ellipsis overflow-hidden px-4 opacity-80">Debug using Chrome
-                                DevTools,
-                                check
-                                for overlapping
-                                elements, and ensure
-                                onClick works
-                                properly
+                                DevTools, check for overlapping elements, and ensure onClick works properly
                                 and ensure onClick works properly</p>
                         </div>
                         <hr class="border-t-2 border-dotted border-gray-300 my-4">
@@ -137,21 +136,16 @@
                                 <p class="font-bold">21 March 2025</p>
                             </div>
                             <div>
-                                <button class="btn btn-active btn-primary">Completed</button>
+                                <button id="completeBtn3" class="btn  btn-primary">Completed</button>
                             </div>
                         </div>
                     </section>
-                    <section class="bg-[#F4F7FF] p-4 space-y-4 rounded-md">
+                    <section class="bg-[#F4F7FF] p-4 space-y-4 rounded-md task">
                         <div class="flex flex-col gap-y-3">
-                            <span class="bg-white px-4 py-2 w-2/4 rounded-md">ShopEase</span>
-                            <p class="font-bold text-xl">Fix Mobile Button Issue </p>
+                            <span class="bg-white px-4 py-2 w-2/4 rounded-md">Meta</span>
+                            <p class="font-bold text-xl exact">Add new emoji 🤲</p>
                             <p class="bg-white multi-line-ellipsis overflow-hidden px-4 opacity-80">Debug using Chrome
-                                DevTools,
-                                check
-                                for overlapping
-                                elements, and ensure
-                                onClick works
-                                properly
+                                DevTools, check for overlapping elements, and ensure onClick works properly
                                 and ensure onClick works properly</p>
                         </div>
                         <hr class="border-t-2 border-dotted border-gray-300 my-4">
@@ -161,21 +155,16 @@
                                 <p class="font-bold">21 March 2025</p>
                             </div>
                             <div>
-                                <button class="btn btn-active btn-primary">Completed</button>
+                                <button id="completeBtn4" class="btn  btn-primary">Completed</button>
                             </div>
                         </div>
                     </section>
-                    <section class="bg-[#F4F7FF] p-4 space-y-4 rounded-md">
+                    <section class="bg-[#F4F7FF] p-4 space-y-4 rounded-md task">
                         <div class="flex flex-col gap-y-3">
-                            <span class="bg-white px-4 py-2 w-2/4 rounded-md">ShopEase</span>
-                            <p class="font-bold text-xl">Fix Mobile Button Issue </p>
+                            <span class="bg-white px-4 py-2 w-2/4 rounded-md">Google LLC</span>
+                            <p class="font-bold text-xl exact">Integrate OpenAI API </p>
                             <p class="bg-white multi-line-ellipsis overflow-hidden px-4 opacity-80">Debug using Chrome
-                                DevTools,
-                                check
-                                for overlapping
-                                elements, and ensure
-                                onClick works
-                                properly
+                                DevTools, check for overlapping elements, and ensure onClick works properly
                                 and ensure onClick works properly</p>
                         </div>
                         <hr class="border-t-2 border-dotted border-gray-300 my-4">
@@ -185,21 +174,16 @@
                                 <p class="font-bold">21 March 2025</p>
                             </div>
                             <div>
-                                <button class="btn btn-active btn-primary">Completed</button>
+                                <button id="completeBtn5" class="btn  btn-primary">Completed</button>
                             </div>
                         </div>
                     </section>
-                    <section class="bg-[#F4F7FF] p-4 space-y-4 rounded-md">
+                    <section class="bg-[#F4F7FF] p-4 space-y-4 rounded-md task">
                         <div class="flex flex-col gap-y-3">
-                            <span class="bg-white px-4 py-2 w-2/4 rounded-md">ShopEase</span>
-                            <p class="font-bold text-xl">Fix Mobile Button Issue </p>
+                            <span class="bg-white px-4 py-2 w-2/4 rounded-md">Glassdoar</span>
+                            <p class="font-bold text-xl exact">Improve Job searching </p>
                             <p class="bg-white multi-line-ellipsis overflow-hidden px-4 opacity-80">Debug using Chrome
-                                DevTools,
-                                check
-                                for overlapping
-                                elements, and ensure
-                                onClick works
-                                properly
+                                DevTools, check for overlapping elements, and ensure onClick works properly
                                 and ensure onClick works properly</p>
                         </div>
                         <hr class="border-t-2 border-dotted border-gray-300 my-4">
@@ -209,7 +193,7 @@
                                 <p class="font-bold">21 March 2025</p>
                             </div>
                             <div>
-                                <button class="btn btn-active btn-primary">Completed</button>
+                                <button id="completeBtn6" class="btn  btn-primary">Completed</button>
                             </div>
                         </div>
                     </section>
@@ -225,13 +209,21 @@
                         <p>Activity Log</p>
                     </div>
                     <div class="flex justify-center">
-                        <button class="btn btn-active btn-primary px-10">Clear History</button>
+                        <button id="clearActivity" class="btn btn-active btn-primary px-10">Clear History</button>
+                    </div>
+                    <div id="emty-div">
+                        <!-- new paragraph  -->
+
+
                     </div>
                 </section>
+                <hr class="border-t-2 border-dotted border-gray-300 my-4">
             </section>
         </main>
     </section>
 
+    <script src="javascript/urilities.js"></script>
+    <script src="javascript/clearactivity.js"></script>
 </body>
 
 </html>
