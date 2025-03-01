@@ -11,6 +11,14 @@ function clickCompletebtn(id) {
             alert("Borad Updated Sucessfully");
             document.getElementById(id).disabled = true;
 
+            // all task completed alert 
+            const taskAssinedText = document.getElementById("taskAssinedText").innerText;
+            const convertedcount = parseInt(taskAssinedText);
+            if (convertedcount === 1) {
+                alert("Congrats!! You Have Completed All the Task")
+            }
+
+
             const my_result = getInnerText("taskAssinedText");
             const substrac = my_result - 1;
             document.getElementById("taskAssinedText").innerText = "0" + substrac;
@@ -38,10 +46,10 @@ function clickCompletebtn(id) {
 
             emty.appendChild(newP).appendChild(spanTag);
 
-            
-            if (document.getElementById("completeBtn6").disabled) {
-                alert("Congrats!! You Have Completed All the Task");
-            }
+
+            // if (document.getElementById("completeBtn6").disabled) {
+            //     alert("Congrats!! You Have Completed All the Task");
+            // }
 
         })
 }
