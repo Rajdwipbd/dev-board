@@ -36,16 +36,17 @@
                     <span id="nav-counter">23</span>
                 </div>
                 <div>
-                    <img id="changeColorBtn" class="btn rounded-full p-2" src="assets/theme-btn.png" alt="">
+                    <img id="changeColorBtn" onclick="changeRandomBackgroundColor()" class="btn rounded-full p-2"
+                        src="assets/theme-btn.png" alt="">
                 </div>
             </div>
         </nav>
     </header>
 
-    <section class="mx-4 my-4 mt-5 bg-white">
-        <main class="w-full flex gap-4 mx-auto">
+    <section class="mx-4 my-4 mt-5">
+        <main class="w-full flex gap-4 mx-auto  ">
             <!-- left main section  -->
-            <section class=" w-5/7 border border-green-400">
+            <section class=" w-5/7 border rounded-lg border-none space-y-2 bg-white">
                 <!-- main top section  -->
                 <section class="flex gap-4 justify-between px-3 my-3">
                     <div class="flex gap-2 items-center p-4 px-8 bg-[#F4F7FF] rounded-lg">
@@ -80,7 +81,7 @@
                 <section class="grid grid-cols-3 gap-4 mx-3">
                     <section class="bg-[#F4F7FF] p-4 space-y-4 rounded-md task">
                         <div class="flex flex-col gap-y-3">
-                            <span class="bg-white px-4 py-2 w-2/4 rounded-md">ShopEase</span>
+                            <span class="bg-white px-4 py-2 w-2/4 rounded-md font-semibold">ShopEase</span>
                             <p class="font-bold text-xl exact">Fix Mobile Button Issue </p>
                             <p class="bg-white multi-line-ellipsis overflow-hidden px-4 opacity-80 ">Debug using
                                 Chrome
@@ -105,7 +106,7 @@
                     </section>
                     <section class="bg-[#F4F7FF] p-4 space-y-4 rounded-md task">
                         <div class="flex flex-col gap-y-3">
-                            <span class="bg-white px-4 py-2 w-2/4 rounded-md">CloudSync</span>
+                            <span class="bg-white px-4 py-2 w-2/4 rounded-md font-semibold">CloudSync</span>
                             <p class="font-bold text-xl exact">Add Dark Mode</p>
                             <p class="bg-white multi-line-ellipsis overflow-hidden px-4 opacity-80 ">Store the user's
                                 preference in localStorage, update CSS variables dynamically, and apply a smooth
@@ -124,7 +125,7 @@
                     </section>
                     <section class="bg-[#F4F7FF] p-4 space-y-4 rounded-md task">
                         <div class="flex flex-col gap-y-3">
-                            <span class="bg-white px-4 py-2 w-2/4 rounded-md">SwiftPay</span>
+                            <span class="bg-white px-4 py-2 w-2/4 rounded-md font-semibold">SwiftPay</span>
                             <p class="font-bold text-xl exact">Optimize Home page</p>
                             <p class="bg-white multi-line-ellipsis overflow-hidden px-4 opacity-80">Debug using Chrome
                                 DevTools, check for overlapping elements, and ensure onClick works properly
@@ -143,7 +144,7 @@
                     </section>
                     <section class="bg-[#F4F7FF] p-4 space-y-4 rounded-md task">
                         <div class="flex flex-col gap-y-3">
-                            <span class="bg-white px-4 py-2 w-2/4 rounded-md">Meta</span>
+                            <span class="bg-white px-4 py-2 w-2/4 rounded-md font-semibold">Meta</span>
                             <p class="font-bold text-xl exact">Add new emoji 🤲</p>
                             <p class="bg-white multi-line-ellipsis overflow-hidden px-4 opacity-80">Debug using Chrome
                                 DevTools, check for overlapping elements, and ensure onClick works properly
@@ -162,7 +163,7 @@
                     </section>
                     <section class="bg-[#F4F7FF] p-4 space-y-4 rounded-md task">
                         <div class="flex flex-col gap-y-3">
-                            <span class="bg-white px-4 py-2 w-2/4 rounded-md">Google LLC</span>
+                            <span class="bg-white px-4 py-2 w-2/4 rounded-md font-semibold">Google LLC</span>
                             <p class="font-bold text-xl exact">Integrate OpenAI API </p>
                             <p class="bg-white multi-line-ellipsis overflow-hidden px-4 opacity-80">Debug using Chrome
                                 DevTools, check for overlapping elements, and ensure onClick works properly
@@ -181,7 +182,7 @@
                     </section>
                     <section class="bg-[#F4F7FF] p-4 space-y-4 rounded-md task">
                         <div class="flex flex-col gap-y-3">
-                            <span class="bg-white px-4 py-2 w-2/4 rounded-md">Glassdoar</span>
+                            <span class="bg-white px-4 py-2 w-2/4 rounded-md font-semibold">Glassdoar</span>
                             <p class="font-bold text-xl exact">Improve Job searching </p>
                             <p class="bg-white multi-line-ellipsis overflow-hidden px-4 opacity-80">Debug using Chrome
                                 DevTools, check for overlapping elements, and ensure onClick works properly
@@ -203,22 +204,25 @@
             </section>
 
             <!-- right main section  -->
-            <section class="w-2/7 border border-yellow-400">
-                <section class="space-y-2 py-4">
+            <section class="w-2/7 border-none rounded-xl bg-white">
+                <section class="space-y-2 py-4 mr-2">
                     <div class="flex gap-2 justify-center">
                         <img src="assets/activity.png" alt="">
                         <p>Activity Log</p>
                     </div>
+
                     <div class="flex justify-center">
                         <button id="clearActivity" class="btn btn-active btn-primary px-10">Clear History</button>
+
                     </div>
+                    <hr class="border-t-2 border-dotted border-gray-300 my-4">
                     <div id="emty-div">
                         <!-- new paragraph  -->
 
 
                     </div>
                 </section>
-                <hr class="border-t-2 border-dotted border-gray-300 my-4">
+
             </section>
         </main>
     </section>
