@@ -47,13 +47,17 @@ function clickCompletebtn(id) {
             emty.appendChild(newP).appendChild(spanTag);
 
 
-            // if (document.getElementById("completeBtn6").disabled) {
-            //     alert("Congrats!! You Have Completed All the Task");
-            // }
-
         })
 }
 
+// live date 
+function updateDate() {
+    const currentDate = new Date();
+    const dateString = currentDate.toDateString();
+    document.getElementById("date").innerText = dateString;
+}
+setInterval(updateDate, 1000);
+updateDate();
 
 
 
